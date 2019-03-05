@@ -6,13 +6,12 @@ services:
       context: .
       dockerfile: ./docker/web/frontend/Dockerfile
     ports:
-      - 80
-    depends_on:
-      - web-backend
+      - 80:80
+    #depends_on:
+     # - web-backend
 
 
-  web-backend:
-    build:
-      context: .
-      dockerfile: ./docker/web/backend/Dockerfile
-
+  #web-backend:
+  # build:
+  #    context: .
+  #    dockerfile: ./docker/web/backend/Dockerfile
